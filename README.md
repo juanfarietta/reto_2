@@ -1,6 +1,7 @@
 # Reto 2
 ## Receta de Cocina
-```
+***
+```mermaid
 classDiagram
     RecetaCocina "1" <|-- Ingredientes
     RecetaCocina "1" <|-- Pasos
