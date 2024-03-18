@@ -1,5 +1,6 @@
 # Reto 2
 ## Receta de Cocina
+Elija un problema de la vida real (sistema de gestión de biblioteca, negocio de compra-venta, automóvil, etc) que se pueda modelar a través de objetos y clases. Plantee las relaciones de clases, composiciones, propiedades y comportamientos del sistema en uno mas diagramas tipo UML.
 ***
 ```mermaid
 classDiagram
@@ -27,5 +28,27 @@ classDiagram
     }
     class Cantidad{
         +RecetaCocina
+    }
+```
+***
+```mermaid
+classDiagram
+    Ingredientes <|-- Alimento
+    Ingredientes <|-- MaterialPreparación
+    Ingredientes <|-- Utensilios
+    Ingredientes : RecetaCocina
+    class Alimento{
+      +Tipo
+      +GrupoAlimenticio
+    }
+    class MaterialPreparación{
+      +Electrodomésticos
+      +Recipientes
+    }
+    class Utensilios{
+      +Platos
+      +Cuchara
+      +Tenedor
+      +Cuchillo
     }
 ```
